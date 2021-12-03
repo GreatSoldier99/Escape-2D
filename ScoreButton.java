@@ -13,6 +13,9 @@ public class ScoreButton extends Button{
         setImage(sbImage);
     }
 
-    public void act() {
+    public void act(){
+        if(Greenfoot.mouseClicked(this)){
+            Greenfoot.setWorld(new ScoreScreen());
+        }
     }
 }
