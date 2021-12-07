@@ -14,8 +14,4 @@ public class HelpButton extends Button{
     public HelpButton(Observer ...observers){
         setImage(button);
     }
-    
-    public void act(){
-        super.act();
-    }   
 }

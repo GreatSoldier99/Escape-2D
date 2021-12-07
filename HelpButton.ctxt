@@ -4,6 +4,4 @@ comment0.text=\r\n\ HelpButton.\ Esta\ clase\ representa\ un\ boton\ que\ cambia
 comment1.params=observers
 comment1.target=HelpButton(Observer[])
 comment1.text=\r\n\ HelpButton.\ Constructor\ de\ la\ clase\ con\ el\ mismo\ nombre,\ coloca\ la\ imagen\ al\ bot\u00F3n.\r\n
-comment2.params=
-comment2.target=void\ act()
-numComments=3
+numComments=2

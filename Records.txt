@@ -1,5 +1,0 @@
-Juan 25
-Maria 30
-Carlos 14
-Pedro 28
-Ivan 50
