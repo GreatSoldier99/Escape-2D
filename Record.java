@@ -1,9 +1,8 @@
 import java.util.*;
 /**
- * Write a description of class R
+ * Record. Esta clase permite crear un record, el cual contiene el nombre del jugador y su puntuación.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Victor Manuel Gómez Solis
  */
 public class Record{
     private String namePlayer;

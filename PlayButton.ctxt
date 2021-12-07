@@ -1,8 +1,9 @@
 #BlueJ class context
 comment0.target=PlayButton
-comment0.text=\r\n\ Write\ a\ description\ of\ class\ ButtonPlay\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
-comment1.params=reviewers
-comment1.target=PlayButton(Reviewer[])
+comment0.text=\r\n\ PlayButton.\ Esta\ clase\ representa\ un\ bot\u00F3n\ que\ inicia\ el\ juego.\r\n\ \r\n\ @author\ Victor\ Manuel\ G\u00F3mez\ Solis\r\n
+comment1.params=observers
+comment1.target=PlayButton(Observer[])
+comment1.text=\r\n\ PlayButton.\ Constructor\ de\ la\ clase\ con\ el\ mismo\ nombre,\ coloca\ la\ imagen\ al\ bot\u00F3n.\r\n
 comment2.params=
 comment2.target=void\ act()
 numComments=3

@@ -1,14 +1,16 @@
 #BlueJ class context
 comment0.target=MenuScreen
-comment0.text=\r\n\ MenuScreen.\ Esta\ clase\ despliega\ el\ menu\ principal,\ el\ cual\ cuenta\ con\ tres\ opciones.\r\n\ \r\n\ @author\ Victor\ Manuel\ G\u00F3mez\ Solis\r\n
+comment0.text=\r\n\ MenuScreen.\ Esta\ clase\ despliega\ el\ menu\ principal,\ el\ cual\ cuenta\ con\ tres\ botones\ que\ pueden\ seleccionarse\ al\ hacer\ click.\r\n\ \r\n\ @author\ Victor\ Manuel\ G\u00F3mez\ Solis\r\n
 comment1.params=
 comment1.target=MenuScreen()
+comment1.text=\r\n\ MenuScreen.\ Constructor\ de\ la\ clase\ con\ el\ mismo\ nombre,\ al\ construirse\ la\ pantalla\ ocurre\ lo\ siguiente\:\ \r\n\ -Se\ coloca\ la\ imagen\ de\ fondo\ de\ la\ pantalla.\ \r\n\ -Se\ colocan\ los\ botones\ que\ contendra\ el\ menu.\r\n
 comment2.params=
 comment2.target=void\ showMenu()
 comment2.text=\r\n\ showMenu.\ Este\ m\u00E9todo\ despliega\ 3\ botones,\ los\ cuales\ son\:\r\n\ -PlayButton.\ Este\ bot\u00F3n\ permite\ iniciar\ el\ juego.\r\n\ -HelpButton.\ Este\ bot\u00F3n\ permite\ acceder\ a\ la\ pantalla\ de\ ayuda\ o\ "como\ jugar".\r\n\ -ScoreButton.\ Este\ bot\u00F3n\ permite\ acceder\ a\ la\ pantalla\ de\ records\ guardados\ del\ juego.\r\n
 comment3.params=
 comment3.target=void\ act()
-comment3.text=\r\n\ act.\ Este\ m\u00E9todo\ se\ encarga\ de\:\r\n\ -Ajustar\ el\ volumen\ y\ reproducir\ la\ m\u00FAsica\ de\ la\ pantalla\ inicial.\r\n
+comment3.text=\r\n\ act.\ Este\ m\u00E9todo\ se\ encarga\ de\:\r\n\ -Ajustar\ el\ volumen\ y\ reproducir\ la\ m\u00FAsica\ del\ menu\ del\ juego.\r\n\ -Verificar\ si\ se\ hace\ click\ con\ el\ mouse\ en\ el\ scoreButton.\r\n
 comment4.params=
 comment4.target=void\ eventOcurred()
+comment4.text=\r\n\ eventOcurred.\ Se\ pausara\ la\ m\u00FAsica\ del\ menu.\r\n
 numComments=5

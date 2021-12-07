@@ -1,8 +1,9 @@
 #BlueJ class context
 comment0.target=Button
-comment0.text=\r\n\ Write\ a\ description\ of\ class\ Button\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment0.text=\r\n\ Button.\ Esta\ clase\ es\ la\ base\ para\ crear\ los\ demas\ botones\ del\ juego.\r\n\ \r\n\ @author\ Victor\ Manuel\ G\u00F3mez\ Solis\r\n
 comment1.params=
 comment1.target=Button()
 comment2.params=
 comment2.target=void\ act()
+comment2.text=\r\n\ act.\ Este\ m\u00E9todo\ realiza\ algunos\ aspectos\ visuales\ a\ los\ botones,\ todos\ los\ botones\ heredar\u00E1n\ esos\ aspectos\ y\ estos\ son\:\r\n\ -Hacer\ transparente\ al\ boton\ cuando\ el\ mouse\ este\ moviendose\ sobre\ el.\r\n
 numComments=3

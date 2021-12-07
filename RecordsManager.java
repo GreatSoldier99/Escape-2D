@@ -1,58 +1,42 @@
 import java.io.*;
 import java.util.*;
 /**
- * Write a description of class RecordsManager here.
+ * RecordsManager. Esta clase permite administrar los records del juego
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Victor Manuel Gómez Solis
  */
 public class RecordsManager{
     private final int numMaxRecords;
-    private int countRecords;
     private final String nameFile;
 
     public RecordsManager(int maxRecords, String name){
         numMaxRecords=maxRecords;
         nameFile=name;
-        countRecords=0;
     }
 
-    public void save(Record record) {
-        if (record.getNamePlayer() == "")
+    public void save(Record newRecord) {
+        if (newRecord.getNamePlayer() == "")
             throw new RecordsException("Empty name not allowed");
 
-        countRecords++;
-        if (countRecords <= numMaxRecords){
-            try (FileWriter fileWriter = new FileWriter(nameFile, true);
-                 PrintWriter printWriter = new PrintWriter(fileWriter)) {
-                printWriter.append(record.getNamePlayer()).append(" ").print(record.getScorePlayer() + "\n");
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-        }
+        List<Record> records = getRecords();
 
-        if(countRecords > numMaxRecords){
-            this.saveInFullCase(record);
-        }
-    }
+        records.add(newRecord);
 
-    public void saveInFullCase(Record record){
-        int i;
-        List<Record> auxRecords = this.getRecords();
-
-        countRecords=0;
+        records.sort((o1, o2) -> o2.getScorePlayer() - o1.getScorePlayer());
 
         try (FileWriter fileWriter = new FileWriter(nameFile);
              PrintWriter printWriter = new PrintWriter(fileWriter)) {
-            printWriter.write("");
+            int counter = 0;
+
+            for(Record record: records){
+                printWriter.append(record.getNamePlayer()).append(" ").print(record.getScorePlayer() + "\n");
+                counter++;
+
+                if(counter == numMaxRecords)
+                    break;
+            }
         } catch (IOException e) {
             e.printStackTrace();
-        }
-        auxRecords.remove(0);
-
-        this.save(record);
-        for(i=0;i<numMaxRecords-1;i++){
-            this.save(auxRecords.get(i));
         }
     }
 

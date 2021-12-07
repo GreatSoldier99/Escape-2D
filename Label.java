@@ -1,29 +1,34 @@
-import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
+import greenfoot.*;
 
 /**
- * Write a description of class Label here.
+ * Label. Esta clase sirve para crear "etiquetas" con imágenes, que pueden usarse para crear titulos o textos simples.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Victor Manuel Gómez Solis
  */
 public class Label extends Actor{
-    private GreenfootImage imgText;
-    private String textLabel;
+    private GreenfootImage labelImage;
+    private String labelText;
     //No me funciona usar \t, lo corregire en cuanto pueda solucionarlo.
     private String splitter = "                        ";
     
+    /**
+     * Label. Este constructor es utilizado cuando se requiere hacer textos de forma simple. Recibe como parámetros:
+     * -Record. Recibe un objeto Record el cual se usa para crear el texto que muestra el record (nombre y puntuación).
+     */
     public Label(Record record){
-        textLabel=record.getNamePlayer()+splitter+Integer.toString(record.getScorePlayer());
-        imgText = new GreenfootImage(textLabel,35,Color.WHITE,null,Color.BLACK);
-        setImage(imgText);
+        labelText=record.getNamePlayer()+splitter+Integer.toString(record.getScorePlayer());
+        labelImage = new GreenfootImage(labelText,35,Color.WHITE,null,Color.BLACK);
+        setImage(labelImage);
     }
     
+    /**
+     * Label. Este constructor es utilizado cuando se reuqiere hacer textos de forma personalizada, como lo son los titulos. Recibe como parámetros:
+     * -text. El texto que estara en la imágen.
+     * -foreGround. El color de las letras del texto.
+     * -outLine. El color del contorno de las letras del texto.
+     */
     public Label(String text, Color foreGround, Color outLine){
-        imgText = new GreenfootImage(text,50,foreGround,null,outLine);
-        setImage(imgText);
-    }
-    
-    public void act(){
-        // Add your action code here.
+        labelImage = new GreenfootImage(text,50,foreGround,null,outLine);
+        setImage(labelImage);
     }
 }

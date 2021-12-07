@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=Observer
+comment0.text=\r\n\ Observer.\ Es\ una\ interfaz\ que\ sera\ muy\ util\ para\ todas\ las\ clases\ para\ poder\ definir\ ciertas\ acciones\ a\ partir\ de\ cierto\ evento\ a\ ocurrir.\r\n\ \r\n\ @author\ Victor\ Manuel\ G\u00F3mez\ Solis\ \r\n
+comment1.params=
+comment1.target=void\ eventOcurred()
+comment1.text=\r\n\ eventOcurred.\ Esta\ firma\ de\ m\u00E9todo\ sera\ aplicada\ en\ las\ clases\ que\ implementen\ esta\ interfaz.\r\n
+numComments=2

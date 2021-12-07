@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=BackButton
+comment0.text=\r\n\ BackButton.\ Esta\ clase\ representa\ un\ bot\u00F3n\ que\ regresa\ a\ la\ pantalla\ anterior.\r\n\ \r\n\ @author\ Victor\ Manuel\ G\u00F3mez\ Solis\r\n
+comment1.params=
+comment1.target=BackButton()
+comment1.text=\r\n\ BackButton.\ Constructor\ de\ la\ clase\ con\ el\ mismo\ nombre,\ coloca\ la\ imagen\ al\ bot\u00F3n.\r\n
+comment2.params=
+comment2.target=void\ act()
+comment2.text=\r\n\ act.\ En\ este\ m\u00E9todo\ ocurren\ las\ siguientes\ acciones\:\r\n\ -Cuando\ se\ le\ hace\ click\ al\ bot\u00F3n,\ se\ regresa\ al\ menu\ principal.\r\n
+numComments=3

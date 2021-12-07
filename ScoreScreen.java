@@ -5,28 +5,56 @@ import java.util.*;
  * 
  * @author Victor Manuel Gómez Solis
  */
-public class ScoreScreen extends World{
-    private GreenfootImage bgImage = new GreenfootImage("Fondo.png");
+public class ScoreScreen extends World implements Observer{
+    private static GreenfootSound music = new GreenfootSound("intro.mp3");
+    private static GreenfootImage background = new GreenfootImage("Fondo.png");
     
-    private static final int maxRecords = 5;
-    private static final String nameFile = "Records.txt";
-    private static RecordsManager recordsManager = new RecordsManager(maxRecords,nameFile);
+    private static final int MAX_RECORDS = 5;
+    private static final String NAME_FILE = "Records.txt";
+    //Puede que deba corregirse
+    private static RecordsManager recordsManager = new RecordsManager(MAX_RECORDS,NAME_FILE);
     
-    private static final String titleText = "MEJORES PUNTAJES\n|Nombre|     |Puntaje|";
-    private static final Color textColor = Color.RED;
-    private static final Color outlineColor = Color.BLACK;
-    private static Label titleLabel = new Label(titleText,textColor,outlineColor);
+    private static final String TEXT_TITLE = "MEJORES PUNTAJES\n|Nombre|     |Puntaje|";
+    private static final Color TEXT_COLOR = Color.RED;
+    private static final Color OUTLINE_COLOR = Color.BLACK;
+    private static Label titleLabel = new Label(TEXT_TITLE,TEXT_COLOR,OUTLINE_COLOR);
     
-    private static int positionX = 325;
-    private static int positionY = 200;
+    private int positionX = 325;
+    private int positionY = 200;
     
+    private BackButton backButton = new BackButton();
+    
+    /**
+     * ScoreScreen. Constructor de la clase con el mismo nombre, al construirse la pantalla ocurre lo siguiente:
+     * -Se coloca la imagen de fondo de la pantalla.
+     * -Se agrega el titulo de la pantalla y etiquetas para los records.
+     * -Se despliegan los records almacenados.
+     * -Se agrega el botón de regresa.
+     */
     public ScoreScreen(){    
         super(700, 450, 1);
-        setBackground(bgImage);
+        setBackground(background);
         addObject(titleLabel,350,112);
         displayRecords();
+        addObject(backButton,30,225);
     }
     
+    /**
+     * act. Este método se encarga de:
+     * -Ajustar el volumen y reproducir la música de la pantalla de records.
+     * -Verificar si se hace click con el mouse en el backButton.
+     */
+    public void act(){
+        music.setVolume(50);
+        music.play();
+        if(Greenfoot.mouseClicked(backButton)){
+            eventOcurred();
+        }
+    }
+    
+    /**
+     * displayRecords. Este método se encarga de desplegar los records guardados.
+     */
     public void displayRecords(){
         List<Record> records = new ArrayList<Record>();
         
@@ -36,5 +64,12 @@ public class ScoreScreen extends World{
             addObject(labelRecord,positionX,positionY);
             positionY+=50;
         }
+    }
+    
+    /**
+     * eventOcurred. Se pausara la música del menu.
+     */
+    public void eventOcurred(){
+        music.pause();
     }
 }

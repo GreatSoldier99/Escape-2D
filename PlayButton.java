@@ -1,20 +1,21 @@
-import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
+import greenfoot.*;
 
 /**
- * Write a description of class ButtonPlay here.
+ * PlayButton. Esta clase representa un botón que inicia el juego.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Victor Manuel Gómez Solis
  */
 public class PlayButton extends Button{
-    GreenfootImage pbImage = new GreenfootImage("PlayBotton.JPEG");
+    GreenfootImage button = new GreenfootImage("PlayButton.JPEG");
     
-    public PlayButton(Reviewer ... reviewers)
-    {
-        setImage(pbImage);
+    /**
+     * PlayButton. Constructor de la clase con el mismo nombre, coloca la imagen al botón.
+     */
+    public PlayButton(Observer ...observers){
+        setImage(button);
     }
 
     public void act(){
-       
+       super.act();
     }
 }

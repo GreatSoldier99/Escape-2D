@@ -1,10 +1,10 @@
 #BlueJ class context
 comment0.target=Label
-comment0.text=\r\n\ Write\ a\ description\ of\ class\ Label\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment0.text=\r\n\ Label.\ Esta\ clase\ sirve\ para\ crear\ "etiquetas"\ con\ im\u00E1genes,\ que\ pueden\ usarse\ para\ crear\ titulos\ o\ textos\ simples.\r\n\ \r\n\ @author\ Victor\ Manuel\ G\u00F3mez\ Solis\r\n
 comment1.params=record
 comment1.target=Label(Record)
+comment1.text=\r\n\ Label.\ Este\ constructor\ es\ utilizado\ cuando\ se\ requiere\ hacer\ textos\ de\ forma\ simple.\ Recibe\ como\ par\u00E1metros\:\r\n\ -Record.\ Recibe\ un\ objeto\ Record\ el\ cual\ se\ usa\ para\ crear\ el\ texto\ que\ muestra\ el\ record\ (nombre\ y\ puntuaci\u00F3n).\r\n
 comment2.params=text\ foreGround\ outLine
 comment2.target=Label(java.lang.String,\ greenfoot.Color,\ greenfoot.Color)
-comment3.params=
-comment3.target=void\ act()
-numComments=4
+comment2.text=\r\n\ Label.\ Este\ constructor\ es\ utilizado\ cuando\ se\ reuqiere\ hacer\ textos\ de\ forma\ personalizada,\ como\ lo\ son\ los\ titulos.\ Recibe\ como\ par\u00E1metros\:\r\n\ -text.\ El\ texto\ que\ estara\ en\ la\ im\u00E1gen.\r\n\ -foreGround.\ El\ color\ de\ las\ letras\ del\ texto.\r\n\ -outLine.\ El\ color\ del\ contorno\ de\ las\ letras\ del\ texto.\r\n
+numComments=3

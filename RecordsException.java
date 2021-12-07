@@ -1,8 +1,7 @@
 /**
- * Write a description of class RecordsException here.
+ * RecordsException. Esta clase despliega un mensaje de excepción.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Victor Manuel Gómez Solis
  */
 public class RecordsException extends RuntimeException{
     public RecordsException(String outputMessage){

@@ -1,12 +1,10 @@
 #BlueJ class context
 comment0.target=RecordsManager
-comment0.text=\r\n\ Write\ a\ description\ of\ class\ RecordsManager\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment0.text=\r\n\ RecordsManager.\ Esta\ clase\ permite\ administrar\ los\ records\ del\ juego\r\n\ \r\n\ @author\ Victor\ Manuel\ G\u00F3mez\ Solis\r\n
 comment1.params=maxRecords\ name
 comment1.target=RecordsManager(int,\ java.lang.String)
-comment2.params=record
+comment2.params=newRecord
 comment2.target=void\ save(Record)
-comment3.params=record
-comment3.target=void\ saveInFullCase(Record)
-comment4.params=
-comment4.target=java.util.List\ getRecords()
-numComments=5
+comment3.params=
+comment3.target=java.util.List\ getRecords()
+numComments=4
