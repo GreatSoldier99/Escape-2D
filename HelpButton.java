@@ -1,18 +1,17 @@
-import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
+import greenfoot.*;  
 
 /**
- * Write a description of class HelpButton here.
+ * HelpButton. Esta clase representa un boton que cambia a la pantalla de ayuda.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Victor Manuel Gómez Solis
  */
 public class HelpButton extends Button{
-    GreenfootImage hbImage = new GreenfootImage("HelpBotton.JPEG");
+    GreenfootImage button = new GreenfootImage("HelpButton.JPEG");
     
-    public HelpButton(Reviewer ... reviewers){
-        setImage(hbImage);
+    /**
+     * HelpButton. Constructor de la clase con el mismo nombre, coloca la imagen al botón.
+     */
+    public HelpButton(Observer ...observers){
+        setImage(button);
     }
-
-    public void act(){
-    }   
 }

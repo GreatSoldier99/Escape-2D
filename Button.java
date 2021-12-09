@@ -1,27 +1,27 @@
-import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
+import greenfoot.*;
 import java.util.*;
 
 /**
- * Write a description of class Button here.
+ * Button. Esta clase es la base para crear los demas botones del juego.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Victor Manuel Gómez Solis
  */
 public class Button extends Actor{
-    private List<Reviewer> reviewers = new LinkedList<>();
+    private static final int LOW_TRANSPARENCY = 100;
+    private static final int HIGH_TRANSPARENCY = 255;
     
-    protected Button (){
-        
+    public Button(){
     }
     
-    public void act() 
-    {
-        if (Greenfoot.mouseClicked(this))
-        {
-            for(Reviewer reviewer: reviewers)
-            {
-                reviewer.eventOcurred();
-            }
+    /**
+     * act. Este método realiza algunos aspectos visuales a los botones, todos los botones heredarán esos aspectos y estos son:
+     * -Hacer transparente al boton cuando el mouse este moviendose sobre el.
+     */
+    public void act(){
+        if(Greenfoot.mouseMoved(this)){
+            getImage().setTransparency(LOW_TRANSPARENCY);
+        }else{
+            getImage().setTransparency(HIGH_TRANSPARENCY);
         }
     }
 }

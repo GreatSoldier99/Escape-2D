@@ -1,18 +1,28 @@
-import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
+import greenfoot.*;
 
 /**
- * Write a description of class ScoreButton here.
+ * ScoreButton. Esta clase representa un boton que cambia a la pantalla de records del juego.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Victor Manuel Gómez Solis
  */
 public class ScoreButton extends Button{
-    GreenfootImage sbImage = new GreenfootImage("ScoreBotton.JPEG");
+    GreenfootImage button = new GreenfootImage("ScoreButton.JPEG");
     
-    public ScoreButton(Reviewer ... reviewers){
-        setImage(sbImage);
+    /**
+     * ScoreButton. Constructor de la clase con el mismo nombre, coloca la imagen al botón.
+     */
+    public ScoreButton(Observer ...observers){
+        setImage(button);
     }
-
-    public void act() {
+    
+    /**
+     * act. En este método ocurren las siguientes acciones:
+     * -Cuando se le hace click al botón, se despliega la pantalla de records.
+     */
+    public void act(){
+        super.act();
+        if(Greenfoot.mouseClicked(this)){
+            Greenfoot.setWorld(new ScoreScreen());
+        }
     }
 }

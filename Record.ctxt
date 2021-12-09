@@ -1,0 +1,20 @@
+#BlueJ class context
+comment0.target=Record
+comment0.text=\r\n\ Record.\ Esta\ clase\ permite\ crear\ un\ record,\ el\ cual\ contiene\ el\ nombre\ del\ jugador\ y\ su\ puntuaci\u00F3n.\r\n\ \r\n\ @author\ Victor\ Manuel\ G\u00F3mez\ Solis\r\n
+comment1.params=name\ score
+comment1.target=Record(java.lang.String,\ int)
+comment2.params=
+comment2.target=java.lang.String\ getNamePlayer()
+comment3.params=name
+comment3.target=void\ setNamePlayer(java.lang.String)
+comment4.params=
+comment4.target=int\ getScorePlayer()
+comment5.params=score
+comment5.target=void\ setScorePlayer(int)
+comment6.params=
+comment6.target=java.lang.String\ toString()
+comment7.params=o
+comment7.target=boolean\ equals(java.lang.Object)
+comment8.params=
+comment8.target=int\ hashCode()
+numComments=9
