@@ -9,6 +9,7 @@ public class MenuScreen extends World implements Observer{
     private static GreenfootSound music = new GreenfootSound("menu.mp3");
     private static GreenfootImage background = new GreenfootImage("menu_Background.png");
     
+    private HelpButton helpButton = new HelpButton(this);
     private ScoreButton scoreButton = new ScoreButton(this);
     
     /**
@@ -30,7 +31,7 @@ public class MenuScreen extends World implements Observer{
      */
     public void showMenu(){
         addObject(new PlayButton(this),350,100);
-        addObject(new HelpButton(this),350,225);
+        addObject(helpButton,350,225);
         addObject(scoreButton,350,350);
     }
     
@@ -42,7 +43,7 @@ public class MenuScreen extends World implements Observer{
     public void act(){
         music.setVolume(50);
         music.play();
-        if(Greenfoot.mouseClicked(scoreButton)){
+        if(Greenfoot.mouseClicked(scoreButton) || Greenfoot.mouseClicked(helpButton)){
             eventOcurred();
         }
     }

@@ -14,4 +14,15 @@ public class HelpButton extends Button{
     public HelpButton(Observer ...observers){
         setImage(button);
     }
+    
+    /**
+     * act. En este método ocurren las siguientes acciones:
+     * -Cuando se le hace click al botón, se despliega la pantalla de ayuda.
+     */
+    public void act(){
+        super.act();
+        if(Greenfoot.mouseClicked(this)){
+            Greenfoot.setWorld(new HelpScreen());
+        }
+    }
 }

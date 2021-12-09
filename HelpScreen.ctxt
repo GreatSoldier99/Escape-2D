@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=HelpScreen
+comment0.text=\r\n\ HelpScreen.\ Esta\ clase\ despliega\ la\ pantalla\ de\ ayuda\ del\ juego.\r\n\ \r\n\ @author\ Victor\ Manuel\ G\u00F3mez\ Solis\r\n
+comment1.params=
+comment1.target=HelpScreen()
+comment1.text=\r\n\ ScoreScreen.\ Constructor\ de\ la\ clase\ con\ el\ mismo\ nombre,\ al\ construirse\ la\ pantalla\ ocurre\ lo\ siguiente\:\r\n\ -Se\ coloca\ la\ imagen\ de\ fondo\ de\ la\ pantalla.\r\n\ -Se\ agrega\ el\ bot\u00F3n\ para\ regresar\ al\ menu.\r\n
+comment2.params=
+comment2.target=void\ act()
+comment2.text=\r\n\ act.\ Este\ m\u00E9todo\ se\ encarga\ de\:\r\n\ -Ajustar\ el\ volumen\ y\ reproducir\ la\ m\u00FAsica\ de\ la\ pantalla\ de\ ayuda.\r\n\ -Verificar\ si\ se\ hace\ click\ con\ el\ mouse\ en\ el\ backButton.\r\n
+comment3.params=
+comment3.target=void\ eventOcurred()
+comment3.text=\r\n\ eventOcurred.\ Se\ pausara\ la\ m\u00FAsica\ del\ menu.\r\n
+numComments=4
