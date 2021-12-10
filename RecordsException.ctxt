@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=RecordsException
-comment0.text=\r\n\ RecordsException.\ Esta\ clase\ despliega\ un\ mensaje\ de\ excepci\u00F3n.\r\n\ \r\n\ @author\ (your\ name)\ \r\n
+comment0.text=\r\n\ RecordsException.\ Esta\ clase\ despliega\ un\ mensaje\ de\ excepci\u00F3n.\r\n\ \r\n\ @author\ Victor\ Manuel\ G\u00F3mez\ Solis\r\n
 comment1.params=outputMessage
 comment1.target=RecordsException(java.lang.String)
 numComments=2
