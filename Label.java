@@ -22,7 +22,7 @@ public class Label extends Actor{
     }
     
     /**
-     * Label. Este constructor es utilizado cuando se reuqiere hacer textos de forma personalizada, como lo son los titulos. Recibe como parámetros:
+     * Label. Este constructor es utilizado cuando se requiere hacer textos de forma personalizada, como lo son los titulos. Recibe como parámetros:
      * -text. El texto que estara en la imágen.
      * -foreGround. El color de las letras del texto.
      * -outLine. El color del contorno de las letras del texto.

@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=LevelTwoScreen
+comment0.text=\r\n\ LevelTwoScreen.\ Esta\ clase\ crea\ el\ segundo\ nivel\ del\ juego.\r\n\ \r\n\ @author\ Victor\ Manuel\ G\u00F3mez\ Solis\r\n
+comment1.params=
+comment1.target=LevelTwoScreen()
+comment1.text=\r\n\ LevelTwoScreen.\ Constructor\ de\ la\ clase\ con\ el\ mismo\ nombre,\ este\ realiza\ lo\ siguiente\:\r\n\ -Prepara\ el\ escenario\ del\ nivel.\r\n
+comment2.params=
+comment2.target=void\ prepare()
+numComments=3

@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.target=WeaponFactory
+comment0.text=\r\n\ WeaponFactory.\ Esta\ clase\ administra\ la\ creaci\u00F3n\ de\ armas\ utilizadas\ por\ los\ personajes\ jugables\ y\ no-jugables.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=weapon\ direction\ keyWeapon
+comment1.target=Weapon\ buildWeapon(java.lang.String,\ int,\ int)
+numComments=2

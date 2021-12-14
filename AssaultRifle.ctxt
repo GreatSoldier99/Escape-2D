@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.target=AssaultRifle
+comment0.text=\r\n\ Esta\ clase\ representa\ el\ arma\ del\ villano\ "Rifle\ Manda".\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=direction\ keyWeapon
+comment1.target=AssaultRifle(int,\ int)
+comment2.params=
+comment2.target=void\ act()
+numComments=3

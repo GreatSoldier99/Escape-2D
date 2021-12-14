@@ -1,5 +1,6 @@
-import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
+import greenfoot.*;
 import java.util.*;
+
 /**
  * ScoreScreen. Esta clase despliega la pantalla donde se veran los records guardados del juego (si los hay).
  * 
@@ -7,11 +8,10 @@ import java.util.*;
  */
 public class ScoreScreen extends World implements Observer{
     private static GreenfootSound music = new GreenfootSound("intro.mp3");
-    private static GreenfootImage background = new GreenfootImage("Fondo.png");
+    private static GreenfootImage background = new GreenfootImage("fondo.png");
     
     private static final int MAX_RECORDS = 5;
     private static final String NAME_FILE = "Records.txt";
-    //Puede que deba corregirse
     private static RecordsManager recordsManager = new RecordsManager(MAX_RECORDS,NAME_FILE);
     
     private static final String TEXT_TITLE = "MEJORES PUNTAJES\n|Nombre|     |Puntaje|";
@@ -33,6 +33,7 @@ public class ScoreScreen extends World implements Observer{
      */
     public ScoreScreen(){    
         super(700, 450, 1);
+        music.setVolume(50);
         setBackground(background);
         addObject(titleLabel,350,112);
         displayRecords();
@@ -45,8 +46,8 @@ public class ScoreScreen extends World implements Observer{
      * -Verificar si se hace click con el mouse en el backButton.
      */
     public void act(){
-        music.setVolume(50);
         music.play();
+        
         if(Greenfoot.mouseClicked(backButton)){
             eventOcurred();
         }

@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=Cover
+comment0.text=\r\n\ Cover.\ Esta\ clase\ representa\ la\ cobertura\ que\ el\ personaje\ jugable\ puede\ utilizar\ para\ agacharse\ y\ cubrirse.\r\n\ \r\n\ @author\ Victor\ Manuel\ G\u00F3mez\ Solis\r\n
+comment1.params=
+comment1.target=Cover()
+comment2.params=
+comment2.target=int\ getcoverWidth()
+comment3.params=
+comment3.target=int\ getcoverHigh()
+numComments=4

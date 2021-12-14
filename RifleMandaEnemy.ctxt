@@ -1,0 +1,22 @@
+#BlueJ class context
+comment0.target=RifleMandaEnemy
+comment0.text=\r\n\ RifleMandaEnemy.\ Esta\ clase\ crea\ y\ controla\ al\ personaje\ no-jugable\ antagonista\ "Rifle\ Manda".\r\n\ \r\n\ @author\ Victor\ Manuel\ G\u00F3mez\ Solis\r\n
+comment1.params=
+comment1.target=RifleMandaEnemy()
+comment2.params=
+comment2.target=void\ act()
+comment3.params=nameImage\ reverse
+comment3.target=greenfoot.GreenfootImage\ prepareImage(java.lang.String,\ java.lang.Boolean)
+comment4.params=
+comment4.target=void\ buildSkins()
+comment5.params=
+comment5.target=void\ enemyControl()
+comment6.params=position
+comment6.target=void\ standing(int)
+comment7.params=x\ y
+comment7.target=void\ moveRight(int,\ int)
+comment8.params=x\ y
+comment8.target=void\ moveLeft(int,\ int)
+comment9.params=
+comment9.target=void\ checkLife()
+numComments=10

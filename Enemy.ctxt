@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.target=Enemy
+comment0.text=\r\n\ Enemy.\ Esta\ clase\ representa\ a\ los\ personajes\ enemigos\ no-jugables.\r\n\ \r\n\r\n
+comment1.params=x\ y
+comment1.target=void\ setPositionPlayer(int,\ int)
+comment2.params=
+comment2.target=int\ getPositionYPlayer()
+comment3.params=
+comment3.target=int\ getPositionXPlayer()
+comment4.params=
+comment4.target=int\ getPoints()
+comment5.params=keyWeapon\ hurt
+comment5.target=void\ subtractLife(int,\ int)
+numComments=6

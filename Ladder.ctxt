@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.target=Ladder
+comment0.text=\r\n\ Ladder.\ Esta\ clase\ representa\ un\ objeto\ escalera,\ por\ el\ cual\ el\ personaje\ jugable\ puede\ subir.\r\n\ \r\n\ @author\ Victor\ Manuel\ G\u00F3mez\ Solis\r\n
+comment1.params=width\ length
+comment1.target=Ladder(int,\ int)
+numComments=2
