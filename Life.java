@@ -2,8 +2,9 @@ import greenfoot.*;
 import java.util.*;
 
 public class Life extends Hud{
-    private static int life = 30;
-    private static int objective = 30;
+    private static int life = 50;
+    private static int objective = 50;
+    private static int previousTime;
     private String level;
     private String text = "Vida " + "(x" + String.valueOf(lives) + ") : ";
     
@@ -11,11 +12,11 @@ public class Life extends Hud{
     
     public Life(){
         buildSign(text, life);
-    } 
+    }
     
     public void act(){
         
-        if(life > objective) {
+        if(life > objective){
             life--;
             updateImage(text, life);
         }
@@ -29,12 +30,12 @@ public class Life extends Hud{
             lives--; 
             Score.passScoreToNewLevel();
             setLife();
-            
+        
             level = getWorld().getClass().getName();
             if(level=="LevelOneScreen"){ 
                 Greenfoot.setWorld(new LevelOneScreen());
             }else if(level=="LevelTwoScreen"){
-                Greenfoot.setWorld(new LevelTwoScreen());
+                Greenfoot.setWorld(new LevelTwoScreen(previousTime));
             }
         }
     }
@@ -44,13 +45,17 @@ public class Life extends Hud{
     }
     
     public static void setHudLife(){
-        life = 30;
-        objective = 30;
+        life = 50;
+        objective = 50;
     }
    
     public static void setLife(){
-         life=30;
-         objective=30;
+         life = 50;
+         objective = 50;
+    }
+    
+    public static void setPreviousTime(int timeStart){
+        previousTime = timeStart;
     }
     
        

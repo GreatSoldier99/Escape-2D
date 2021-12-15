@@ -14,6 +14,8 @@ public class WeaponFactory extends Actor{
                 return new Pistol(direction, keyWeapon);
             case "AssaultRifle":
                 return new AssaultRifle(direction, keyWeapon); 
+            case "SniperRifle":
+                return new SniperRifle(direction, keyWeapon);
             default:
                 return null;
         }

@@ -12,4 +12,6 @@ comment5.params=
 comment5.target=void\ setHudLife()
 comment6.params=
 comment6.target=void\ setLife()
-numComments=7
+comment7.params=timeStart
+comment7.target=void\ setPreviousTime(int)
+numComments=8

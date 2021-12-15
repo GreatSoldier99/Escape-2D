@@ -9,4 +9,6 @@ comment3.params=
 comment3.target=void\ Coallition()
 comment4.params=
 comment4.target=boolean\ isTouchedBySoldier()
-numComments=5
+comment5.params=timeStart
+comment5.target=void\ setPreviousTime(int)
+numComments=6

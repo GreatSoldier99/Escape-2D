@@ -297,9 +297,9 @@ public class Soldier extends Actor{
             case "Pistol":
                 return 10;
             case "AssaultRifle":
-                return 25;
+                return 15;
             default:
-                return 1;
+                return 70;
         }
     }
     

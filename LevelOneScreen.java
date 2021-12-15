@@ -16,12 +16,14 @@ public class LevelOneScreen extends World{
     
     private SimpleTimer time = new SimpleTimer();
     private Counter timeCounter = new Counter("TIEMPO\n");
+    private NextLevelDoor doorNextLevel = new NextLevelDoor();
     
     private final int MAX_RECORDS = 5;
     private final String NAME_FILE = "Records.txt";
     private RecordsManager recordsManager = new RecordsManager(MAX_RECORDS,NAME_FILE);
     
     private boolean start = true;
+    private boolean play = true;
     
     /**
      * LevelOneScreen. Constructor de la clase con el mismo nombre, este realiza lo siguiente:
@@ -42,7 +44,7 @@ public class LevelOneScreen extends World{
         buildLadders();
         buildTreasures();
         addObject(player, 25, 370);
-        addObject(new NextLevelDoor(), 671, 101);
+        addObject(doorNextLevel, 671, 101);
     }
     
     /**
@@ -50,12 +52,22 @@ public class LevelOneScreen extends World{
      * -Ajustar el volumen y reproducir la música del menu del juego.
      */
     public void act(){
-        music.play();
+        if(play){
+            music.play();
+        }
         positionPlayer();
         trackTime();
+        verifyMusicStatus();
         compareLives();
     }
-   
+    
+    public void verifyMusicStatus(){
+        if(doorNextLevel.isTouchedBySoldier()){
+            music.play();
+            play = false;
+        }
+    }
+    
     public void positionPlayer(){
         Enemy.setPositionPlayer(player.getPositionX(), player.getPositionY());
     }
@@ -106,7 +118,7 @@ public class LevelOneScreen extends World{
     public void buildLadders(){
         addObject(new Ladder(25, 150), 17, 214);
         addObject(new Ladder(25, 150), 306, 214);
-        addObject(new Ladder(25, 150), 675, 350);//347
+        addObject(new Ladder(25, 150), 675, 350);
     }
     
     /**
@@ -133,6 +145,8 @@ public class LevelOneScreen extends World{
     public void trackTime(){
         if(start){
             timeCounter.setValue(time.millisElapsed() / 1000);
+            Life.setPreviousTime(timeCounter.getValue());
+            doorNextLevel.setPreviousTime(timeCounter.getValue());
         }
     }
     
@@ -141,9 +155,9 @@ public class LevelOneScreen extends World{
      */
     private void compareLives(){
         if(Hud.getLives() <= 0 ){
-            music.stop();
-            start = false;
             Record record;
+            music.play();
+            start = false;
             
             String name = JOptionPane.showInputDialog("Ingresa tu nombre");            
             record = new Record(name, Hud.getTotalScore());
